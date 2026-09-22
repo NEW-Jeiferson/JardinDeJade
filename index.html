@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardin De Jade</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Jardin De Jade Restaurant</h1>
+        
+        <button id="btn-cambiar-idioma">
+            <span class="texto-btn-es">Inglés</span>
+            <span class="texto-btn-en">Spanish</span>
+        </button>
+
+        <button id="btn-cambiar-moneda">
+            <span class="texto-moneda">DOP / USD</span>
+        </button>
+
+        <button id="btn-modo-oscuro">
+            <span class="texto-btn-es">Modo Oscuro</span>
+            <span class="texto-btn-en">Dark Mode</span>
+        </button>
+
+        <div class="Categoria">
+            <nav>
+                <button data-categoria="todos">
+                    <span class="texto-btn-es">Todos</span>
+                    <span class="texto-btn-en">All</span>
+                </button>
+
+                <button data-categoria="entradas">
+                    <span class="texto-btn-es">Entradas</span>
+                    <span class="texto-btn-en">Appetizers</span>
+                </button>
+
+                <button data-categoria="platos-fuertes">
+                    <span class="texto-btn-es">Platos Fuertes</span>
+                    <span class="texto-btn-en">Main Courses</span>
+                </button>
+
+                <button data-categoria="bebidas">
+                    <span class="texto-btn-es">Bebidas</span>
+                    <span class="texto-btn-en">Drinks</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="menu">
+            <article data-categoria="entradas">
+                <img src="assets/AlitasDePolloChinas.jpg" alt="Alitas de Pollo Chinas">
+
+                <div class="Contenido-Tarjeta">
+                    <h2 class="titulo-es">Alitas de Pollo Chinas</h2>
+                    <h2 class="titulo-en">Chinese Chicken Wings</h2>
+
+                    <p class="descripcion-es">Alitas sazonadas con salsa de soya, jengibre y cinco especias chinas, fritas a la perfección con un toque crujiente.</p>
+                    <p class="descripcion-en">Seasoned chicken wings with soy sauce, ginger, and five Chinese spices, perfectly fried with a crispy touch.</p>
+
+                    <button class="btn-ver-mas">
+                        <span class="texto-btn-es">Ver más</span>
+                        <span class="texto-btn-en">See more</span>
+                    </button>
+
+                    <div class="precio">
+                        <p class="precio-dop" data-precio="380">Precio: $380</p>
+                        <p class="precio-usd" data-precio="7">Price: $7</p>
+                    </div>
+                </div>
+
+                <p class="detalles-es oculto">Porción de 6 piezas impregnadas en marinada artesanal con toque sutil de cebollín y ajonjolí.</p>
+                <p class="detalles-en oculto">Portion of 6 pieces soaked in artisanal marinade with a subtle touch of chives and sesame seeds.</p>
+            </article>
+
+            <article data-categoria="platos-fuertes">
+                <img src="assets/ChowMeinDePollo.jpg" alt="Chow Mein de Pollo">
+
+                <div class="Contenido-Tarjeta">
+                    <h2 class="titulo-es">Chow Mein de Pollo</h2>
+                    <h2 class="titulo-en">Chicken Chow Mein</h2>
+
+                    <p class="descripcion-es">Fideos salteados al wok con finas tiras de pechuga de pollo, col china, zanahoria y cebolla en salsa de ostra.</p>
+                    <p class="descripcion-en">Stir-fried noodles with thin slices of chicken breast, Chinese cabbage, carrots, and onions in oyster sauce.</p>
+
+                    <button class="btn-ver-mas">
+                        <span class="texto-btn-es">Ver más</span>
+                        <span class="texto-btn-en">See more</span>
+                    </button>
+
+                    <div class="precio">
+                        <p class="precio-dop" data-precio="600">Precio: $600</p>
+                        <p class="precio-usd" data-precio="10">Price: $10</p>
+                    </div>
+                </div>
+
+                <p class="detalles-es oculto">Fideos de trigo frescos salteados a fuego alto. Contiene soya y salsa de ostra.</p>
+                <p class="detalles-en oculto">Stir-fried fresh wheat noodles with soy and oyster sauce.</p>
+            </article>
+
+            <article data-categoria="bebidas">
+                <img src="assets/TeChinoFrio.jpg" alt="Te Chino Frío">
+
+                <div class="Contenido-Tarjeta">
+                    <h2 class="titulo-es">Te Chino Frío</h2>
+                    <h2 class="titulo-en">Chinese Iced Tea</h2>
+
+                    <p class="descripcion-es">Infusión fría de té verde con jazmín y un suave toque de dulzura natural, súper refrescante.</p>
+                    <p class="descripcion-en">Cold green tea infusion with jasmine and a subtle touch of natural sweetness, super refreshing.</p>
+
+                    <button class="btn-ver-mas">
+                        <span class="texto-btn-es">Ver más</span>
+                        <span class="texto-btn-en">See more</span>
+                    </button>
+
+                    <div class="precio">
+                        <p class="precio-dop" data-precio="150">Precio: $150</p>
+                        <p class="precio-usd" data-precio="2.50">Price: $2.50</p>
+                    </div>
+                </div>
+
+                <p class="detalles-es oculto">Bebida 100% natural infusionada en frío, ligera y perfecta para limpiar el paladar entre platillos.</p>
+                <p class="detalles-en oculto">Cold green tea infusion with jasmine and a subtle touch of natural sweetness, super refreshing.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 Jardin De Jade Restaurant. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

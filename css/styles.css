@@ -1,0 +1,93 @@
+.oculto { 
+    display: none; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #222222;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #00563b;
+}
+
+button {
+    background-color: #00563b;
+    color: #ffffff;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+article {
+    background-color: #f5f1f1;
+    border-radius: 8px;
+    width: 220px;
+    padding: 12px;
+    text-align: center;
+}
+
+article img {
+    width: 220px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.precio {
+    color: #b81d13;
+}
+
+.titulo-en, 
+.descripcion-en, 
+.texto-btn-en, 
+.precio-usd, 
+.detalles-en { 
+    display: none; 
+}
+
+body.en-ingles .titulo-es, 
+body.en-ingles .descripcion-es, 
+body.en-ingles .texto-btn-es,
+body.en-ingles .detalles-es { 
+    display: none; 
+}
+
+body.en-ingles .titulo-en, 
+body.en-ingles .descripcion-en, 
+body.en-ingles .texto-btn-en { 
+    display: block; 
+}
+
+body.en-ingles .detalles-en:not(.oculto) {
+    display: block;
+}
+
+body.en-dolares .precio-dop { 
+    display: none; 
+}
+
+body.en-dolares .precio-usd { 
+    display: block; 
+}
+
+body.modo-oscuro {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.modo-oscuro article {
+    background-color: #1e1e1e;
+    border-color: #333333;
+}
