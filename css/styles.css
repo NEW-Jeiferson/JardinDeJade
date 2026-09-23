@@ -3,50 +3,84 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #222222;
-    margin: 0;
-    padding: 20px;
+    font-family: serif;
+    background-color: #F6F1E7;
     text-align: center;
 }
 
 h1 {
-    color: #00563b;
+    color: #2A2018;
+    font-size: 33px;
 }
 
+h2 {
+    font-size: 23px;
+    color: #2A2018;
+}       
+
+p {
+    margin-top: 8px;
+    color:#000000;
+    font-size: 16px;
+}
+
+.precio-dop {
+    font-weight: bold;
+    margin-top: 16px;
+    color: #C0492B
+}
+
+.precio-usd {
+    font-weight: bold;
+    margin-top: 16px;
+    color: #C0492B
+}
+
+
+
 button {
-    background-color: #00563b;
+    background-color: #C0492B;
     color: #ffffff;
-    padding: 15px;
-    margin: 5px;
     border-radius: 10px;
+    padding: 8px;
+    margin-top: 16px;
+    border: none;
+}
+
+button:hover {
+    background-color: #000000;
 }
 
 #menu {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
+    gap: 48px;
+    margin-top: 24px;
+    padding: 16px;
 }
 
 article {
-    background-color: #f5f1f1;
+    background-color: #EADFCB;
     border-radius: 8px;
-    width: 220px;
-    padding: 12px;
+    width: 320px;
     text-align: center;
+    padding: 64px;
 }
 
 article img {
-    width: 220px;
-    height: 120px;
+    width: 320px;
+    height: 200px;
     border-radius: 10px;
     object-fit: cover;
 }
 
 .precio {
     color: #b81d13;
+}
+
+footer {
+    margin-top: 64px;
+    font-size: 19px;
 }
 
 .titulo-en, 
@@ -84,7 +118,7 @@ body.en-dolares .precio-usd {
 
 body.modo-oscuro {
     background-color: #121212;
-    color: #ffffff;
+    color: #F6F1E7;
 }
 
 body.modo-oscuro article {
